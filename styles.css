@@ -1,0 +1,132 @@
+:root {
+  --background-primary: #ecf0f1;
+  --card-background: #ffffff;
+  --font-color: #000000;
+  --font: "Inter";
+}
+html {
+  background-color: var(--background-primary);
+  font-family: var(--font);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+
+  max-width: 1450px;
+  padding: 0px 50px 200px 50px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #000000 solid;
+  min-height: 10vh;
+}
+p{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+
+}
+.header1 {
+  font-size: 64px;
+  line-height: 77px;
+  font-weight: 700;
+}
+.header2 {
+  font-size: 52px;
+  line-height: 63px;
+  font-weight: 600;
+}
+.header3 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+}
+.header4 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+}
+.text {
+  font-size: 26px;
+  font-weight: 600;
+
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.text-small {
+  font-size: 20px;
+
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.icon {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+
+  min-height: 70vh;
+  width: 100%;
+  border: 1px #000000 solid;
+}
+.page h1 {
+  margin: auto 0;
+}
+.projects-view {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.projects-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2vh;
+  grid-row-gap: 2vh;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  background-color: var(--card-background);
+  border-radius: 30px;
+  padding: 25px;
+}
+.screens-view {
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template-columns: 31% 31% 31%;
+  margin-bottom: 1vh;
+}
+.screen {
+  width: 100%;
+}
+.card-title-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
