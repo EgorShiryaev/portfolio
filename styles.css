@@ -2,6 +2,9 @@
   --background-primary: #ecf0f1;
   --card-background: #ffffff;
   --font-color: #000000;
+  --chip-background: #007ef2;
+  --button-background: #000000;
+  --secondary-font-color: #ffffff;
   --font: "Inter";
 }
 html {
@@ -24,53 +27,46 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px #000000 solid;
   min-height: 10vh;
 }
-p{
+p {
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-
-
 }
-.header1 {
+.header-1 {
   font-size: 64px;
-  line-height: 77px;
-  font-weight: 700;
 }
-.header2 {
+.header-2 {
   font-size: 52px;
-  line-height: 63px;
-  font-weight: 600;
 }
-.header3 {
+.header-3 {
   font-size: 36px;
-  line-height: 44px;
-  font-weight: 600;
 }
-.header4 {
+.header-4 {
   font-size: 32px;
-  line-height: 39px;
-  font-weight: 700;
 }
 .text {
   font-size: 26px;
-  font-weight: 600;
-
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 .text-small {
   font-size: 20px;
-
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 400;
+}
+.semi-black {
+  font-weight: 800;
+}
+.black {
+  font-weight: 900;
 }
 .social-networks {
   display: flex;
@@ -88,10 +84,8 @@ p{
   display: flex;
   flex-direction: column;
   gap: 5vh;
-
   min-height: 70vh;
   width: 100%;
-  border: 1px #000000 solid;
 }
 .page h1 {
   margin: auto 0;
@@ -110,17 +104,17 @@ p{
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 2vh;
   background-color: var(--card-background);
   border-radius: 30px;
   padding: 25px;
+  height: min-content;
 }
 .screens-view {
   display: grid;
   flex-direction: row;
   justify-content: space-between;
   grid-template-columns: 31% 31% 31%;
-  margin-bottom: 1vh;
 }
 .screen {
   width: 100%;
@@ -129,4 +123,64 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.chip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.shadow-container {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.black-background {
+  background: var(--button-background);
+}
+.chip p {
+  color: var(--secondary-font-color);
+}
+.chips-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blue-background {
+  background: var(--chip-background);
+}
+.workplace-view {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.skills-view {
+  padding: 10px 0px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.start-page {
+  justify-content: center;
+}
+.achievements-view {
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template-columns: 31% 31% 31%;
+}
+.achievement-image{
+  width: 100%;
 }
