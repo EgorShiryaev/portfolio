@@ -9,7 +9,9 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="js/check_mobile.js"></script>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <script type="text/javascript" src="js/modal.js" defer></script>
+    <script type="text/javascript" src="js/install_buttons_handlers.js" defer></script>
   </head>
   <body>
     <header>
@@ -221,6 +223,12 @@
             </div>
             <div class="card-title-view">
               <p class="header-4 semi-bold">Vremena Goda</p>
+              <div
+                class="chip black-background shadow-container"
+                id="vg-install-button"
+              >
+                <p class="text-small semi-bold">Установить</p>
+              </div>
             </div>
             <p class="text regular">
               Мобильное приложение с программой лояльности для торгового центра
@@ -267,6 +275,12 @@
             </div>
             <div class="card-title-view">
               <p class="header-4 semi-bold">Glenfield</p>
+              <div
+                class="chip black-background shadow-container"
+                id="glenfield-install-button"
+              >
+                <p class="text-small semi-bold">Установить</p>
+              </div>
             </div>
             <p class="text regular">
               Мобильное приложение с программой лояльности для торговой марки
@@ -313,6 +327,12 @@
             </div>
             <div class="card-title-view">
               <p class="header-4 semi-bold">NorbitConnect</p>
+              <div
+                class="chip black-background shadow-container"
+                id="nc-install-button"
+              >
+                <p class="text-small semi-bold">Установить</p>
+              </div>
             </div>
             <p class="text regular">
               Мобильное приложение для внутренней коммуникации в Norbit.
@@ -433,6 +453,29 @@
           src="./assets/achievements/final.png"
           alt=""
         />
+      </div>
+    </div>
+
+    <div class="modal-background" id="modal-background">
+      <div class="modal">
+        <div class="close-icon" id="close-icon"></div>
+        <div class="modal-content">
+          <div class="store-button">
+            <div class="store-icon app-store-icon"></div>
+            <p class="header-3">App Store</p>
+            <a id="app-store-link" href=""></a>
+          </div>
+          <div class="store-button">
+            <div class="store-icon google-play-icon"></div>
+            <p class="header-3">Google Play</p>
+            <a id="google-play-link" href=""></a>
+          </div>
+          <div class="store-button" id="huawei-button">
+            <div class="store-icon app-gallery-icon"></div>
+            <p class="header-3">App Gallery</p>
+            <a id="app-gallery-link" href=""></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>

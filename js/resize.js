@@ -1,5 +1,5 @@
 function detectMob() {
-  return window.outerWidth <= 800;
+  return window.outerWidth <= 1000;
 }
 
 const setMobileStyles = () => {
@@ -11,6 +11,6 @@ const setMobileStyles = () => {
     elem.classList.remove("mobile");
   }
 };
-
+ 
 window.onresize = setMobileStyles;
 window.onload = setMobileStyles;
