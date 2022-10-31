@@ -37,7 +37,7 @@ GlenfieldStoreButton.onclick = function () {
   showModal();
   HuaweiStoreButton.style.visibility = "hidden";
   AppStoreLink.href = "https://apps.apple.com/ru/app/glenfield/id1613951528";
-  GooglePlayLink.href = "";
+  GooglePlayLink.href = "https://play.google.com/store/apps/details?id=ru.glenfield.mobile&hl=ru";
 };
 
 NCStoreButton.onclick = function () {
