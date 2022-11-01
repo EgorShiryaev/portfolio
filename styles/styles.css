@@ -214,7 +214,7 @@ ul {
 }
 .modal {
   position: relative;
-  width: 350px;
+  width: max-content;
   padding: 3%;
   background-color: var(--background-primary);
   border-radius: 20px;
