@@ -8,27 +8,30 @@
   display: grid;
   flex-direction: row;
   justify-content: space-between;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
 }
 .mobile .project-card {
   gap: 1vh;
 }
+.mobile .header-1 {
+  font-size: 72px;
+}
 .mobile .header-2 {
-  font-size: 60px;
+  font-size: 64px;
 }
 .mobile .header-3 {
-  font-size: 52px;
+  font-size: 56px;
 }
 .mobile .header-4 {
-  font-size: 44px;
+  font-size: 48px;
 }
 .mobile .text {
-  font-size: 40px;
+  font-size: 44px;
 }
 .mobile .text-small {
-  font-size: 36px;
+  font-size: 40px;
 }
 .mobile .chips-view {
   gap: 10px;
@@ -36,7 +39,10 @@
 .mobile .chip {
   padding: 10px 30px;
 }
-.mobile li {
-  font-size: 15px;
-  font-weight: 400;
+.mobile .social-networks p {
+  visibility: hidden;
+}
+.mobile .icon {
+  width: 50px;
+  height: 50px;
 }

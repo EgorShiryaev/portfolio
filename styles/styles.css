@@ -75,6 +75,9 @@ p {
   align-items: center;
   gap: 20px;
 }
+.social-networks p {
+  visibility: visible;
+}
 .icon {
   width: 30px;
   height: 30px;
@@ -157,18 +160,6 @@ p {
 .skills-view {
   padding: 10px 0px;
 }
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-}
 .start-page {
   justify-content: center;
 }
@@ -222,7 +213,7 @@ ul {
 .modal-content {
   display: grid;
   gap: 15px;
-  height:min-content;
+  height: min-content;
 }
 .close-icon {
   position: absolute;
@@ -230,7 +221,7 @@ ul {
   top: 15px;
   width: 15px;
   height: 15px;
-  background-image: url("../assets/cross.png");
+  background-image: url("../assets/icons/cross.png");
   background-size: contain;
 }
 .store-button {
@@ -255,19 +246,19 @@ ul {
   margin-right: 10px;
 }
 .app-store-icon {
-  background-image: url("../assets/app-store-icon.png");
+  background-image: url("../assets/icons/app-store-icon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .google-play-icon {
-  background-image: url("../assets/google-play-icon.png");
+  background-image: url("../assets/icons/google-play-icon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .app-gallery-icon {
-  background-image: url("../assets/app-gallery-icon.png");
+  background-image: url("../assets/icons/app-gallery-icon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
