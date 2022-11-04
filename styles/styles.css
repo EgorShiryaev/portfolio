@@ -270,8 +270,8 @@ p {
   height: 100%;
 }
 a {
-  color: #000000;
-  text-decoration: none;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 .skills-view p {
   margin: 10px 0px;
