@@ -1,30 +1,33 @@
 var modalBack = document.getElementById("modal-background");
 
-var VGButton = document.getElementById("vg-install-button");
-var GlenfieldStoreButton = document.getElementById("glenfield-install-button");
-var NCStoreButton = document.getElementById("nc-install-button");
+var VremenaGodaInstallButton = document.getElementById("vg-install-button");
+var GlenfieldInstallButton = document.getElementById(
+  "glenfield-install-button"
+);
+var NorbitConnectInstallButton = document.getElementById("nc-install-button");
+var BPMSoftInstallButton = document.getElementById("bpmsoft-install-button");
 
 var AppStoreLink = document.getElementById("app-store-link");
 var GooglePlayLink = document.getElementById("google-play-link");
 var HuaweiStoreLink = document.getElementById("app-gallery-link");
 
-const showModal = function () {
+var showModal = () => {
   modalBack.style.display = "flex";
 };
 
 var HuaweiStoreButton = document.getElementById("huawei-button");
 
-const hideHuaweiStoreButton = function () {
+var hideHuaweiStoreButton = () => {
   HuaweiStoreButton.style.visibility = "hidden";
   HuaweiStoreButton.style.position = "absolute";
 };
 
-const showHuaweiStoreButton = function () {
+var showHuaweiStoreButton = () => {
   HuaweiStoreButton.style.visibility = "visible";
   HuaweiStoreButton.style.position = "relative";
 };
 
-VGButton.onclick = function () {
+VremenaGodaInstallButton.onclick = () => {
   hideHuaweiStoreButton();
   showModal();
   AppStoreLink.href = "https://apps.apple.com/ru/app/vremena-goda/id1546734723";
@@ -32,15 +35,15 @@ VGButton.onclick = function () {
     "https://play.google.com/store/apps/details?id=ru.vremenagoda.client&hl=ru&gl=US";
 };
 
-GlenfieldStoreButton.onclick = function () {
+GlenfieldInstallButton.onclick = () => {
   hideHuaweiStoreButton();
   showModal();
-  HuaweiStoreButton.style.visibility = "hidden";
   AppStoreLink.href = "https://apps.apple.com/ru/app/glenfield/id1613951528";
-  GooglePlayLink.href = "https://play.google.com/store/apps/details?id=ru.glenfield.mobile&hl=ru";
+  GooglePlayLink.href =
+    "https://play.google.com/store/apps/details?id=ru.glenfield.mobile&hl=ru";
 };
 
-NCStoreButton.onclick = function () {
+NorbitConnectInstallButton.onclick = () => {
   showHuaweiStoreButton();
   showModal();
   AppStoreLink.href =
@@ -49,3 +52,11 @@ NCStoreButton.onclick = function () {
     "https://play.google.com/store/apps/details?id=ru.norbit.connect&hl=ru&gl=US";
   HuaweiStoreLink.href = "https://appgallery.huawei.com/#/app/C105065399";
 };
+
+BPMSoftInstallButton.onclick = () => {
+  hideHuaweiStoreButton();
+  showModal();
+  AppStoreLink.href = "https://apps.apple.com/ru/app/bpmsoft/id1641881866";
+  GooglePlayLink.href =
+    "https://play.google.com/store/apps/details?id=ru.bpmsoft.mobileapp&hl=ru";
+}
